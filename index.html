@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    <title>Home</title>
+{% endblock %}
+
+{% block body %}
+
+<body>
+
+<div class="container mt-5">
+    <h2 class="mb-4">AmulFed Dairy <br>Form<br></h2>
+    
+    <form id="professionalForm">
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label for="srNo">Sr. No</label>
+                <input type="text" class="form-control" id="srNo" disabled value="Auto-generated">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="date">Date</label>
+                <input type="date" class="form-control" id="date" disabled>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="category">Category</label>
+            <select id="category" class="form-control">
+                <option>Approval</option>
+                <option>Extenal Circular</option>
+                <option>Internal Circular </option>
+                <option>Inquiry</option>
+                <option>Letters</option>
+                <option>Payment Advice</option>
+                <option>Work Orders</option>
+                <!-- Add more categories as needed -->
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="remarks">Remarks</label>
+            <textarea class="form-control" id="remarks" rows="4"></textarea>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="startDate">Start Date</label>
+                <input type="date" class="form-control" id="startDate">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="endDate">End Date</label>
+                <input type="date" class="form-control" id="endDate">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="executiveName">Executive Name</label>
+            <select id="executiveName" class="form-control">
+                <option>Account</option>
+                <option>Purchase</option>
+                <option>Marketing</option>
+                <option>ADM</option>
+                <option>ISD</option>
+                <option>GRB</option>
+                <!-- Add more executives as needed -->
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="userBox">User Box</label>
+            <input type="text" class="form-control" id="userBox">
+        </div>
+        <div class="form-group">
+            <label for="entryName">Entry Name</label>
+            <input type="text" class="form-control" id="entryName">
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+</body>
+</html>
+
+
+
+{% endblock %}
